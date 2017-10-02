@@ -110,7 +110,7 @@ endfunction
 % Abaqus' Field Output Parser
 %
 function value = abaqus_report(file_rpt, columns, prealloc = false)
-	if(prealloc) value(1089, 1:colums)= zeros(1089,1:colums); endif;
+	if(prealloc > 0) value(prealloc, 1:colums)= zeros(prealloc,1:colums); endif;
 	global abaqus_cfg;
 	fid = file_open(file_rpt);
 	if(fid < 0) return; endif

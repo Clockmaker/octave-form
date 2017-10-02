@@ -21,7 +21,7 @@ cache_stop();
 
 %figure (1, 'visible', 'off'); 
 report = readdir (rpt_dir);
-for frame = 33:length(report)
+for frame = 3:length(report)
 	tic();
 	[~,name,~] = fileparts(report{frame});
 	png = strcat(frame_dir,name,'.png');

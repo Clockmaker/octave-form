@@ -15,5 +15,6 @@ $RECYCLE.BIN/
 .inp
 .rpt
 
-#Octave
+# Matlab/Octave
 octave-workspace
+*.mat

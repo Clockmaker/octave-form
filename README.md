@@ -6,6 +6,7 @@
 ***
 
 The Forming Limit Diagram (FLD) is a common tool in sheet metal forming.
+
 The quality of the part is predicted by the strain imposed during the forming procedure.
 
 ## Forming Limit Curve
@@ -26,6 +27,7 @@ For the M-K's hyphothesis the fracture of the metal sheet is caused by inhomogen
 ...
 
 By default the code uses the von Mises criterion:
+
 ![MK_vonMises](../master/docs/mk_mises.svg)
 
 ## Abaqus

@@ -7,7 +7,7 @@
 %
 % Marciniak-Kuczynski's FLC
 %
-function flc =flc_mk(n, f=0.999, alpha=linspace(.7,1,10),  %
+function flc = flc_mk(n, f=0.999, alpha=linspace(.7,1,10),  %
 interactive=false, %
 m=0, delta=1e-2, fail=1.1, %
 % Flow Rule
@@ -28,8 +28,6 @@ E2=@(x) ((2*x-1)/(2*(x^2-x+1)^.5)) )
     'De',0, %strain increment
     'a', 0  %strain ratio
   );
-
-
 
   % Stop Condition (B.De/A.De)>100
   stop = delta/fail;

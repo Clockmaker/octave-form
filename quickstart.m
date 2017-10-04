@@ -16,7 +16,7 @@ clear part;
 meshgrid = abaqus_mesh(blank.element);
 [x0,y0,z0] = qshell(blank.node, meshgrid);
 % displacement
-u = abaqus_report('abaqus.rpt', 3);
+u = abaqus_report('u.rpt', 3);
 U = meshgrid_apply(meshgrid, u);
 [u1,u2,u3] = deal(U(:,:,1), U(:,:,2), U(:,:,3));
 % final position
@@ -50,4 +50,5 @@ hold on
 scatter(le(:,1),le(:,2),100, flcolor(fld,:),'.');
 fld_plot(n, flc);
 caxis([1,10]);
+fld_legend();
 hold off

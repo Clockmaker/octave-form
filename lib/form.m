@@ -28,6 +28,16 @@ function map = fld_colormap()
 	endfor
 endfunction
 
+function fld_legend()
+	global fld_region;
+	options = {'markersize',10,'linewidth',1,'color','none'};
+	list = fieldnames(fld_region);
+	for i = 1:length(list)
+		plot(NaN,NaN,strcat('s;',list{i},';'), 'markerfacecolor',fld_region.(list{i}).color, options{:})
+	endfor
+	legend('orientation','horizontal','location', 'north')
+endfunction
+
 function fld_leftside(n, r_m=1,option={})
 	plot([-n 0],[n 0], option{:});
 	plot([-n 0],[n*(r_m+1)/(r_m) 0], option{:});

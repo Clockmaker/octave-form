@@ -76,9 +76,10 @@
 <use x='221.244' xlink:href='#g4-27' y='62.7613'/>
 <use x='225.726' xlink:href='#g0-65' y='60.2529'/>
 <rect height='0.358656' width='14.1856' x='216.934' y='63.8479'/>
-<use x='219.096' xlink:href='#g4-27' y='70.7088'/>
-<use x='223.578' xlink:href='#g0-65' y='68.6499'/>
-<use x='223.364' xlink:href='#g7-49' y='73.6634'/>
+<use x='216.934' xlink:href='#g4-64' y='70.7088'/>
+<use x='221.244' xlink:href='#g4-27' y='70.7088'/>
+<use x='225.726' xlink:href='#g0-65' y='68.6499'/>
+<use x='225.511' xlink:href='#g7-49' y='73.6634'/>
 <use x='232.315' xlink:href='#g3-0' y='66.0198'/>
 <use x='239.421' xlink:href='#g8-22' y='66.0198'/>
 <use x='238.877' xlink:href='#g5-34' y='66.0198'/>
@@ -88,9 +89,10 @@
 <use x='253.399' xlink:href='#g4-27' y='62.7613'/>
 <use x='257.88' xlink:href='#g0-66' y='60.2529'/>
 <rect height='0.358656' width='13.9283' x='249.089' y='63.8479'/>
-<use x='251.251' xlink:href='#g4-27' y='70.7088'/>
-<use x='255.733' xlink:href='#g0-66' y='68.6499'/>
-<use x='255.518' xlink:href='#g7-49' y='73.6634'/>
+<use x='249.089' xlink:href='#g4-64' y='70.7088'/>
+<use x='253.399' xlink:href='#g4-27' y='70.7088'/>
+<use x='257.88' xlink:href='#g0-66' y='68.6499'/>
+<use x='257.666' xlink:href='#g7-49' y='73.6634'/>
 <use x='264.212' xlink:href='#g1-19' y='54.8217'/>
 </g>
 </svg>

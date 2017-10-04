@@ -12,8 +12,8 @@ $RECYCLE.BIN/
 *.lnk
 
 #Abaqus
-.inp
-.rpt
+*.inp
+*.rpt
 
 # Matlab/Octave
 octave-workspace

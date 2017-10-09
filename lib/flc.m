@@ -78,7 +78,7 @@ E2=@(x) ((2*x-1)/(2*(x^2-x+1)^.5)) )
       if(abs(A.De-A_De) < eps)
         retry=0;
         A.e+=A.De;
-  	    B.e+=delta;
+        B.e+=delta;
         if interactive
           scatter([E2(A.a)*A.e],[E1(A.a)*A.e],2,'b','.');
           scatter([E2(B.a)*B.e],[E1(B.a)*B.e],2,'g','.');
@@ -88,7 +88,7 @@ E2=@(x) ((2*x-1)/(2*(x^2-x+1)^.5)) )
         %printf('%i| %f %f\n',retry, A_De, A.De)
         if(retry > 10) break;
         else A.De-=1e-6; endif;
-  	  endif;
+      endif;
 
     endwhile;
     % Store Max Strain

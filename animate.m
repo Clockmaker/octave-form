@@ -22,25 +22,25 @@ cache_stop();
 %figure (1, 'visible', 'off'); 
 report = readdir (rpt_dir);
 for frame = 3:length(report)
-	tic();
-	[~,name,~] = fileparts(report{frame});
-	png = strcat(frame_dir,name,'.png');
-	if(file_exist(png)) continue; endif;
-	clf;
-	%close all;
-	rpt = strcat(rpt_dir,report{frame})
-	r = abaqus_report(rpt, 7);
-	le = [r(:,6) r(:,4)];
-	u = [r(:,1), r(:,2) r(:,3)];
-	%
-	U = meshgrid_apply(meshgrid, u);
-	[u1,u2,u3] = deal(U(:,:,1), U(:,:,2), U(:,:,3));
-	[x,y,z] = deal(x0+u1, y0+u2, z0+u3);
-	%
-	fld = fld_create(le, n, flc, 0.2);
-	FLD = meshgrid_apply(meshgrid, fld);
-	printf('report %.2f\n', toc())
-	%
+    tic();
+    [~,name,~] = fileparts(report{frame});
+    png = strcat(frame_dir,name,'.png');
+    if(file_exist(png)) continue; endif;
+    clf;
+    %close all;
+    rpt = strcat(rpt_dir,report{frame})
+    r = abaqus_report(rpt, 7);
+    le = [r(:,6) r(:,4)];
+    u = [r(:,1), r(:,2) r(:,3)];
+    %
+    U = meshgrid_apply(meshgrid, u);
+    [u1,u2,u3] = deal(U(:,:,1), U(:,:,2), U(:,:,3));
+    [x,y,z] = deal(x0+u1, y0+u2, z0+u3);
+    %
+    fld = fld_create(le, n, flc, 0.2);
+    FLD = meshgrid_apply(meshgrid, fld);
+    printf('report %.2f\n', toc())
+    %
 
 % MESH
 tic();

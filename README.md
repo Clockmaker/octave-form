@@ -1,6 +1,10 @@
 # Octave Form
 
-![FLD demo](../master/demo.gif)
+* Deep drawing
+![FLD demo](../master/demo_deepdrawing.gif)
+![FLD legend](../master/legend.png)
+* Hydroforming
+![FLD demo](../master/demo_hydroforming.gif)
 ![FLD legend](../master/legend.png)
 
 ***
@@ -22,22 +26,19 @@ For the M-K's hyphothesis the fracture of the metal sheet is caused by inhomogen
 
  ![\left(\dfrac{\bar{\varepsilon}^{\textsc{\tiny{A}}}}{\bar{\varepsilon}^{\textsc{\tiny{B}}}}\right)^{n}\left(\dfrac{\dot{\bar{\varepsilon}}^{\textsc{\tiny{A}}}}{\dot{\bar{\varepsilon}}^{\textsc{\tiny{B}}}}\right)^{m}=\frac{~^{\bar{\sigma}^{\textsc{\tiny{A}}}}\!\!/_{\sigma_{1}^{\textsc{\tiny{A}}}}}{~^{\bar{\sigma}^{\textsc{\tiny{B}}}}\!\!/_{\sigma_{1}^{\textsc{\tiny{B}}}}}~~\textrm{f}~e^{\left( \bar{\varepsilon}^{\textsc{A}}\frac{\partial\bar{\sigma}^{\textsc{A}}}{\partial\sigma_{1}^{\textsc{A}}} - \bar{\varepsilon}^{\textsc{B}}\frac{\partial\bar{\sigma}^{\textsc{B}}}{\partial\sigma_{1}^{\textsc{B}}} \right)}](../master/docs/mk.svg)
 
-````flc_mk(n, f, alpha, interactive, m, delta, fail, Ss, E1, E2)````
+````matlab
+flc_mk(n, f, alpha, interactive, m, delta, fail, Ss, E1, E2)
+````
 
 ...
 
-By default the code uses the von Mises criterion:
+By default the simulation uses the von Mises criterion, giving
 
 ![MK_vonMises](../master/docs/mk_mises.svg)
 
 ## Abaqus
 * `.inp` are parsed using the function `abaqus_load` and supported elements are `S4/S4R`;
 * `.rpt` are loaded using `abaqus_report`.
-
-The conversion to meshgrid is not always smooth.
-If the stack orientation is inconsistent, chances are that the mesh will fail to build correctly.
-
-I don't plan to further develop this code, at least not in Octave.
 
 ***
 # References
